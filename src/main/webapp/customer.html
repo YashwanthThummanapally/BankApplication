@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="addcust" method="post">
+		<table>
+			<tr>
+				<td>AccountNumber</td>
+				<td><input type="number" name="accno" required></td>
+			</tr>
+			<tr>
+				<td>AccountHolderName</td>
+				<td><input type="text" name="name" required></td>
+			</tr>
+			<tr>
+				<td>AccountBalance</td>
+				<td><input type="text" name="bal" placeholder="Minimum 500 Rs/-"></td>
+			</tr>
+			<tr>
+				<td>AccountType</td>
+				<td>
+					<select name="acctype">
+						<option value="Current account">Current account</option>
+						<option value="Savings account">Savings account</option>
+						<option value="Salary account">Salary account</option>
+						<option value="Fixed deposit account">Fixed deposit account</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Add Customer"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
